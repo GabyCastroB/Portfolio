@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Aquí defines el tema (colores personalizados) */
+@theme {
+    --color-border: 220 14% 96%;
+    --color-background: 0 0% 100%;
+    --color-foreground: 222 47% 11%;
+}
+
+
 @keyframes float-slow {
   0%,
   100% {
