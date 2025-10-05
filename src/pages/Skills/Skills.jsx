@@ -2,15 +2,17 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import IconCloudDemo from "@/components/globe";
-import { Code2, Paintbrush, Database, Layout, Cpu, Cloud } from "lucide-react";
+import { Code2, Paintbrush, Database, Layout, Cpu, Cloud , Microchip, Camera} from "lucide-react";
 import {
   FaReact,
+  FaJava,
+  FaJs,
+  FaHtml5,
+  FaCss3Alt,
   FaNodeJs,
   FaPython,
-  FaJava,
-  FaHtml5,
-  FaJs,
-  FaCss3Alt,
+  FaArduino,
+  FaRaspberryPi,
   FaDocker,
   FaGitAlt,
   FaLinux,
@@ -21,11 +23,15 @@ import {
   SiNextdotjs,
   SiTypescript,
   SiTailwindcss,
+  SiCplusplus,
   SiPostgresql,
   SiMongodb,
   SiGraphql,
-  SiMatlab,
-  SiCplusplus,
+  SiPytorch,
+  SiTensorflow,
+  SiOpencv,
+  SiNumpy,
+  SiKeras,
   SiJest,
   SiWebpack,
   SiRedux,
@@ -73,50 +79,16 @@ const SkillCard = ({ icon: Icon, title, skills, color }) => (
 const SkillsSection = () => {
   const skillCategories = [
     {
-        icon: Cpu,
-        title: "Industrial Automation & Control",
-        color: "text-red-400",
-        skills: [
-            { name: "Studio 5000", icon: <Cpu className="w-4 h-4 text-[#EF4444]" /> },
-            { name: "Factory IO", icon: <Cpu className="w-4 h-4 text-[#DC2626]" /> },
-            { name: "Ignition SCADA", icon: <Cpu className="w-4 h-4 text-[#B91C1C]" /> },
-            { name: "Ladder Logic", icon: <Cpu className="w-4 h-4 text-[#F87171]" /> },
-            { name: "Cadesimu", icon: <Cpu className="w-4 h-4 text-[#E11D48]" /> },
-            { name: "FluidSIM", icon: <Cpu className="w-4 h-4 text-[#991B1B]" /> },
-      ],
-    },
-    {
-        icon: Code2,
-        title: "Programming Languages",
-        color: "text-orange-400",
-        skills: [
-            { name: "Python", icon: <FaPython className="w-4 h-4 text-[#3776AB]" /> },
-            { name: "C++", icon: <SiCplusplus className="w-4 h-4 text-[#004482]" /> },
-            { name: "Java", icon: <FaJava className="w-4 h-4 text-[#E34F26]" /> },
-            { name: "JavaScript", icon: <FaJs className="w-4 h-4 text-[#F7DF1E]" /> },
-            { name: "HTML", icon: <FaHtml5 className="w-4 h-4 text-[#E44D26]" /> },
-            { name: "CSS", icon: <FaCss3Alt className="w-4 h-4 text-[#264DE4]" /> },
-            { name: "MATLAB", icon: <SiMatlab className="w-4 h-4 text-[#E16737]" /> },
-      ],
-    },
-    {
-      icon: Layout,
-      title: "UI/UX Design",
-      color: "text-purple-400",
-      skills: [
-        { name: "Figma", icon: <FaFigma className="w-4 h-4 text-[#F24E1E]" /> },
-        {
-          name: "Responsive Design",
-          icon: <Layout className="w-4 h-4 text-[#38B2AC]" />,
-        },
-        {
-          name: "Wireframing",
-          icon: <BsGrid1X2 className="w-4 h-4 text-[#9CA3AF]" />,
-        },
-        {
-          name: "Prototyping",
-          icon: <MdAnimation className="w-4 h-4 text-[#F59E0B]" />,
-        },
+    icon: Cpu,
+    title: "Industrial Automation & Control",
+    color: "text-red-400",
+    skills: [
+        { name: "Studio 5000", icon: <Cpu className="w-4 h-4 text-[#EF4444]" /> },
+        { name: "Factory IO", icon: <Cpu className="w-4 h-4 text-[#DC2626]" /> },
+        { name: "Ignition SCADA", icon: <Cpu className="w-4 h-4 text-[#B91C1C]" /> },
+        { name: "Ladder Logic", icon: <Cpu className="w-4 h-4 text-[#F87171]" /> },
+        { name: "Cadesimu", icon: <Cpu className="w-4 h-4 text-[#E11D48]" /> },
+        { name: "FluidSIM", icon: <Cpu className="w-4 h-4 text-[#991B1B]" /> },
       ],
     },
     {
