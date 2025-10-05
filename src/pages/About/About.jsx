@@ -23,31 +23,28 @@ export default function About() {
             </div>
 
             <div className="relative space-y-4">
-              <p className="text-white">
-                Hello! I'm Gabriela Castro, a passionate JavaScript developer
-                specializing in creating innovative web solutions and
-                user-friendly interfaces.{" "}
-                <span className="font-bold text-white">
-                  As the creator of the OlovaJS UI Framework
-                </span>
-                , I'm dedicated to simplifying development workflows.
-              </p>
-              <p className="text-white">
-                My focus is on making web development faster, easier, and
-                accessible to all developers. Currently, I'm expanding into
-                backend development to grow as a full-stack developer and create
-                seamless, robust web applications.
-              </p>
+                <p className="text-white">
+                    Hello! I'm <span className="font-semibold text-[#FF5A5A]">Gabriela María Castro Beltrán</span>, an
+                    <span className="font-semibold"> Electronic Engineer </span> from the
+                    <span className="font-semibold"> National University of Colombia</span>.
+                    I specialize in <span className="text-[#FF8C8C]">industrial automation, IoT, and computer vision</span> — creating
+                    smart solutions that integrate <span className="font-semibold">hardware, software, and artificial intelligence</span>.
+                </p>
+
+                <p className="text-white">
+                    My work combines engineering and innovation to develop
+                    <span className="text-[#FF8C8C]"> intelligent control systems, digital twins, and real-time AI applications</span>.
+                    I’m passionate about bringing automation closer to <span className="font-semibold">Industry 4.0 and 5.0</span> standards
+                    — making technology more efficient, adaptive, and human-centered.
+                </p>
 
               <div className="pt-6">
                 <blockquote className="border-l-4 border-gray-300 pl-4">
-                  <p className="text-white">
-                    I'm a lifelong learner and innovator, driven by a desire to
-                    contribute to the developer community with new ideas and
-                    tools that deliver real value. As the creator of OlovaJS,
-                    I'm pushing the boundaries of JavaScript frameworks to
-                    empower developers worldwide.
-                  </p>
+                    <p className="text-white">
+                        “Technology becomes truly powerful when it connects intelligence
+                        with real-world impact. My goal is to merge automation, data, and
+                        AI to build smarter, more sustainable systems.”
+                    </p>
 
                   <div className="mt-6 space-y-3">
                     <cite className="block font-medium text-white">
