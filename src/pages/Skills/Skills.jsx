@@ -7,6 +7,10 @@ import {
   FaReact,
   FaNodeJs,
   FaPython,
+  FaJava,
+  FaHtml5,
+  FaJs,
+  FaCss3Alt,
   FaDocker,
   FaGitAlt,
   FaLinux,
@@ -20,6 +24,8 @@ import {
   SiPostgresql,
   SiMongodb,
   SiGraphql,
+  SiMatlab,
+  SiCplusplus,
   SiJest,
   SiWebpack,
   SiRedux,
@@ -67,62 +73,30 @@ const SkillCard = ({ icon: Icon, title, skills, color }) => (
 const SkillsSection = () => {
   const skillCategories = [
     {
-      icon: Code2,
-      title: "Frontend Development",
-      color: "text-blue-400",
-      skills: [
-        { name: "React", icon: <FaReact className="w-4 h-4 text-[#61DAFB]" /> },
-        {
-          name: "Next.js",
-          icon: <SiNextdotjs className="w-4 h-4 text-white" />,
-        },
-        {
-          name: "TypeScript",
-          icon: <SiTypescript className="w-4 h-4 text-[#3178C6]" />,
-        },
-        {
-          name: "Tailwind CSS",
-          icon: <SiTailwindcss className="w-4 h-4 text-[#38B2AC]" />,
-        },
-        {
-          name: "HTML5",
-          icon: <BsFileEarmarkCode className="w-4 h-4 text-[#E34F26]" />,
-        },
-        {
-          name: "CSS3",
-          icon: <BsFileEarmarkCode className="w-4 h-4 text-[#1572B6]" />,
-        },
+        icon: Cpu,
+        title: "Industrial Automation & Control",
+        color: "text-red-400",
+        skills: [
+            { name: "Studio 5000", icon: <Cpu className="w-4 h-4 text-[#EF4444]" /> },
+            { name: "Factory IO", icon: <Cpu className="w-4 h-4 text-[#DC2626]" /> },
+            { name: "Ignition SCADA", icon: <Cpu className="w-4 h-4 text-[#B91C1C]" /> },
+            { name: "Ladder Logic", icon: <Cpu className="w-4 h-4 text-[#F87171]" /> },
+            { name: "Cadesimu", icon: <Cpu className="w-4 h-4 text-[#E11D48]" /> },
+            { name: "FluidSIM", icon: <Cpu className="w-4 h-4 text-[#991B1B]" /> },
       ],
     },
     {
-      icon: Database,
-      title: "Backend Development",
-      color: "text-green-400",
-      skills: [
-        {
-          name: "Node.js",
-          icon: <FaNodeJs className="w-4 h-4 text-[#339933]" />,
-        },
-        {
-          name: "Python",
-          icon: <FaPython className="w-4 h-4 text-[#3776AB]" />,
-        },
-        {
-          name: "PostgreSQL",
-          icon: <SiPostgresql className="w-4 h-4 text-[#336791]" />,
-        },
-        {
-          name: "MongoDB",
-          icon: <SiMongodb className="w-4 h-4 text-[#47A248]" />,
-        },
-        {
-          name: "REST APIs",
-          icon: <BsGrid1X2 className="w-4 h-4 text-[#FF6C37]" />,
-        },
-        {
-          name: "GraphQL",
-          icon: <SiGraphql className="w-4 h-4 text-[#E10098]" />,
-        },
+        icon: Code2,
+        title: "Programming Languages",
+        color: "text-orange-400",
+        skills: [
+            { name: "Python", icon: <FaPython className="w-4 h-4 text-[#3776AB]" /> },
+            { name: "C++", icon: <SiCplusplus className="w-4 h-4 text-[#004482]" /> },
+            { name: "Java", icon: <FaJava className="w-4 h-4 text-[#E34F26]" /> },
+            { name: "JavaScript", icon: <FaJs className="w-4 h-4 text-[#F7DF1E]" /> },
+            { name: "HTML", icon: <FaHtml5 className="w-4 h-4 text-[#E44D26]" /> },
+            { name: "CSS", icon: <FaCss3Alt className="w-4 h-4 text-[#264DE4]" /> },
+            { name: "MATLAB", icon: <SiMatlab className="w-4 h-4 text-[#E16737]" /> },
       ],
     },
     {
