@@ -15,7 +15,6 @@ import {
     FaJs,
     FaHtml5,
     FaCss3Alt,
-    FaArduino,
     FaRaspberryPi,
     FaGithub,
     FaGitAlt,
@@ -23,18 +22,19 @@ import {
 } from "react-icons/fa";
 import {
     SiCplusplus,
-    SiMatlab,
     SiPytorch,
     SiTensorflow,
     SiOpencv,
     SiNumpy,
     SiKeras,
-    SiVisualstudiocode,
     SiLatex,
     SiNotion,
     SiJupyter,
 } from "react-icons/si";
-import { BsFileEarmarkSpreadsheet } from "react-icons/bs";
+import { TbBrandVscode } from "react-icons/tb";
+import { BsFileEarmarkCode, BsGrid1X2 } from "react-icons/bs";
+import { MdAnimation } from "react-icons/md";
+import { FcWorkflow } from "react-icons/fc";
 
 const SkillCard = ({ icon: Icon, title, skills, color }) => (
     <Card className="group relative overflow-hidden bg-gray-900/80 border-gray-700 hover:scale-[1.02] transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/20">
@@ -94,7 +94,7 @@ const SkillsSection = () => {
                 { name: "JavaScript", icon: <FaJs className="w-4 h-4 text-[#F7DF1E]" /> },
                 { name: "HTML", icon: <FaHtml5 className="w-4 h-4 text-[#E44D26]" /> },
                 { name: "CSS", icon: <FaCss3Alt className="w-4 h-4 text-[#264DE4]" /> },
-                { name: "MATLAB", icon: <SiMatlab className="w-4 h-4 text-[#E16737]" /> },
+                { name: "MATLAB", icon: <Cpu className="w-4 h-4 text-[#E16737]" /> },
             ],
         },
         {
@@ -114,7 +114,7 @@ const SkillsSection = () => {
             title: "Electronics & Hardware",
             color: "text-pink-400",
             skills: [
-                { name: "Arduino", icon: <FaArduino className="w-4 h-4 text-[#00979D]" /> },
+                { name: "Arduino", icon: <Cpu className="w-4 h-4 text-[#00979D]" /> },
                 { name: "Raspberry Pi", icon: <FaRaspberryPi className="w-4 h-4 text-[#C51A4A]" /> },
                 { name: "KiCad", icon: <Cpu className="w-4 h-4 text-[#9CA3AF]" /> },
                 { name: "Fusion 360", icon: <Cpu className="w-4 h-4 text-[#7C4DFF]" /> },
@@ -125,8 +125,8 @@ const SkillsSection = () => {
             title: "Software & IDEs",
             color: "text-blue-300",
             skills: [
-                { name: "Visual Studio", icon: <SiVisualstudiocode className="w-4 h-4 text-[#007ACC]" /> },
-                { name: "VS Code", icon: <SiVisualstudiocode className="w-4 h-4 text-[#007ACC]" /> },
+                { name: "Visual Studio", icon: <Cpu className="w-4 h-4 text-[#007ACC]" /> },
+                { name: "VS Code", icon: <Cpu className="w-4 h-4 text-[#007ACC]" /> },
                 { name: "GitHub", icon: <FaGithub className="w-4 h-4 text-white" /> },
                 { name: "Git", icon: <FaGitAlt className="w-4 h-4 text-[#F05032]" /> },
                 { name: "PyCharm", icon: <FaPython className="w-4 h-4 text-[#4B8BBE]" /> },
@@ -139,7 +139,7 @@ const SkillsSection = () => {
             color: "text-green-400",
             skills: [
                 { name: "LaTeX", icon: <SiLatex className="w-4 h-4 text-[#008080]" /> },
-                { name: "Excel", icon: <BsFileEarmarkSpreadsheet className="w-4 h-4 text-[#217346]" /> },
+                { name: "Excel", icon: <Cpu className="w-4 h-4 text-[#217346]" /> },
                 { name: "Notion", icon: <SiNotion className="w-4 h-4 text-white" /> },
             ],
         },
@@ -148,7 +148,7 @@ const SkillsSection = () => {
             title: "Cloud & Collaboration",
             color: "text-orange-400",
             skills: [
-                { name: "Google Colab", icon: <FaGoogleDrive className="w-4 h-4 text-[#F4B400]" /> },
+                { name: "Google Colab", icon: <Cpu className="w-4 h-4 text-[#F4B400]" /> },
                 { name: "Jupyter", icon: <SiJupyter className="w-4 h-4 text-[#F37626]" /> },
                 { name: "Microsoft Office", icon: <FaMicrosoft className="w-4 h-4 text-[#F25022]" /> },
             ],
@@ -157,10 +157,11 @@ const SkillsSection = () => {
 
     return (
         <main className="pt-15 lg:pt-0 text-white min-h-screen bg-[#04081A] relative">
+            {/* Grid Background */}
             <div className="absolute inset-0 bg-grid-pattern opacity-20 pointer-events-none"></div>
 
             <section className="container mx-auto px-4 py-11 relative z-10">
-                <div className="flex justify-center items-center mb-10">
+                <div className="flex justify-center items-center ">
                     <IconCloudDemo />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -175,33 +176,32 @@ const SkillsSection = () => {
                     ))}
                 </div>
             </section>
-
             <style jsx>{`
-        @keyframes shimmer {
-          0% {
-            transform: translateX(-100%);
-          }
-          100% {
-            transform: translateX(100%);
-          }
-        }
-        .animate-shimmer {
-          animation: shimmer 2s infinite;
-        }
-        .bg-grid-pattern {
-          background-image: linear-gradient(
-              to right,
-              rgba(100, 100, 255, 0.1) 1px,
-              transparent 1px
-            ),
-            linear-gradient(
-              to bottom,
-              rgba(100, 100, 255, 0.1) 1px,
-              transparent 1px
-            );
-          background-size: 30px 30px;
-        }
-      `}</style>
+                @keyframes shimmer {
+                    0% {
+                        transform: translateX(-100%);
+                    }
+                    100% {
+                        transform: translateX(100%);
+                    }
+                }
+                .animate-shimmer {
+                    animation: shimmer 2s infinite;
+                }
+                .bg-grid-pattern {
+                    background-image: linear-gradient(
+                            to right,
+                            rgba(100, 100, 255, 0.1) 1px,
+                            transparent 1px
+                    ),
+                    linear-gradient(
+                            to bottom,
+                            rgba(100, 100, 255, 0.1) 1px,
+                            transparent 1px
+                    );
+                    background-size: 30px 30px;
+                }
+            `}</style>
         </main>
     );
 };
