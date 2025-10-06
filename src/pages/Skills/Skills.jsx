@@ -2,31 +2,39 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import IconCloudDemo from "@/components/globe";
-import { Paintbrush, Cpu, Cloud, Camera, Microchip } from "lucide-react";
 import {
+    Cpu,
+    Code2,
+    Cloud,
+    Database,
+    Paintbrush,
+} from "lucide-react";
+import {
+    FaPython,
+    FaJava,
+    FaJs,
+    FaHtml5,
+    FaCss3Alt,
     FaArduino,
-    FaDocker,
+    FaRaspberryPi,
+    FaGithub,
     FaGitAlt,
-    FaLinux,
-    FaAws,
+    FaMicrosoft,
 } from "react-icons/fa";
 import {
+    SiCplusplus,
+    SiMatlab,
     SiPytorch,
     SiTensorflow,
     SiOpencv,
     SiNumpy,
     SiKeras,
-    SiJest,
-    SiWebpack,
-    SiRedux,
-    SiFirebase,
-    SiVercel,
-    SiVite,
+    SiVisualstudiocode,
+    SiLatex,
+    SiNotion,
+    SiJupyter,
 } from "react-icons/si";
-import { TbBrandVscode } from "react-icons/tb";
-import { BsGrid1X2 } from "react-icons/bs";
-import { MdAnimation } from "react-icons/md";
-import { FcWorkflow } from "react-icons/fc";
+import { BsFileEarmarkSpreadsheet } from "react-icons/bs";
 
 const SkillCard = ({ icon: Icon, title, skills, color }) => (
     <Card className="group relative overflow-hidden bg-gray-900/80 border-gray-700 hover:scale-[1.02] transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/20">
@@ -67,16 +75,30 @@ const SkillsSection = () => {
             title: "Industrial Automation & Control",
             color: "text-red-400",
             skills: [
-                { name: "Studio 5000", icon: <Cpu className="w-4 h-4 text-[#EF4444]" /> },
-                { name: "Factory IO", icon: <Cpu className="w-4 h-4 text-[#DC2626]" /> },
-                { name: "Ignition SCADA", icon: <Cpu className="w-4 h-4 text-[#B91C1C]" /> },
-                { name: "Ladder Logic", icon: <Cpu className="w-4 h-4 text-[#F87171]" /> },
-                { name: "Cadesimu", icon: <Cpu className="w-4 h-4 text-[#E11D48]" /> },
-                { name: "FluidSIM", icon: <Cpu className="w-4 h-4 text-[#991B1B]" /> },
+                { name: "Studio 5000", icon: <Cpu className="w-4 h-4 text-red-400" /> },
+                { name: "Factory IO", icon: <Cpu className="w-4 h-4 text-red-500" /> },
+                { name: "Ignition SCADA", icon: <Cpu className="w-4 h-4 text-red-600" /> },
+                { name: "Ladder Logic", icon: <Cpu className="w-4 h-4 text-red-700" /> },
+                { name: "Cadesimu", icon: <Cpu className="w-4 h-4 text-red-500" /> },
+                { name: "FluidSIM", icon: <Cpu className="w-4 h-4 text-red-700" /> },
             ],
         },
         {
-            icon: Camera,
+            icon: Code2,
+            title: "Programming Languages",
+            color: "text-blue-400",
+            skills: [
+                { name: "Python", icon: <FaPython className="w-4 h-4 text-[#3776AB]" /> },
+                { name: "C++", icon: <SiCplusplus className="w-4 h-4 text-[#004482]" /> },
+                { name: "Java", icon: <FaJava className="w-4 h-4 text-[#E34F26]" /> },
+                { name: "JavaScript", icon: <FaJs className="w-4 h-4 text-[#F7DF1E]" /> },
+                { name: "HTML", icon: <FaHtml5 className="w-4 h-4 text-[#E44D26]" /> },
+                { name: "CSS", icon: <FaCss3Alt className="w-4 h-4 text-[#264DE4]" /> },
+                { name: "MATLAB", icon: <SiMatlab className="w-4 h-4 text-[#E16737]" /> },
+            ],
+        },
+        {
+            icon: Database,
             title: "Artificial Intelligence & Computer Vision",
             color: "text-yellow-400",
             skills: [
@@ -88,50 +110,47 @@ const SkillsSection = () => {
             ],
         },
         {
-            icon: Microchip,
+            icon: Paintbrush,
             title: "Electronics & Hardware",
             color: "text-pink-400",
             skills: [
                 { name: "Arduino", icon: <FaArduino className="w-4 h-4 text-[#00979D]" /> },
                 { name: "Raspberry Pi", icon: <FaRaspberryPi className="w-4 h-4 text-[#C51A4A]" /> },
+                { name: "KiCad", icon: <Cpu className="w-4 h-4 text-[#9CA3AF]" /> },
+                { name: "Fusion 360", icon: <Cpu className="w-4 h-4 text-[#7C4DFF]" /> },
+            ],
+        },
+        {
+            icon: Code2,
+            title: "Software & IDEs",
+            color: "text-blue-300",
+            skills: [
+                { name: "Visual Studio", icon: <SiVisualstudiocode className="w-4 h-4 text-[#007ACC]" /> },
+                { name: "VS Code", icon: <SiVisualstudiocode className="w-4 h-4 text-[#007ACC]" /> },
+                { name: "GitHub", icon: <FaGithub className="w-4 h-4 text-white" /> },
+                { name: "Git", icon: <FaGitAlt className="w-4 h-4 text-[#F05032]" /> },
+                { name: "PyCharm", icon: <FaPython className="w-4 h-4 text-[#4B8BBE]" /> },
+                { name: "WebStorm", icon: <Cpu className="w-4 h-4 text-[#60A5FA]" /> },
+            ],
+        },
+        {
+            icon: BookOpen,
+            title: "Data Analysis & Documentation",
+            color: "text-green-400",
+            skills: [
+                { name: "LaTeX", icon: <SiLatex className="w-4 h-4 text-[#008080]" /> },
+                { name: "Excel", icon: <BsFileEarmarkSpreadsheet className="w-4 h-4 text-[#217346]" /> },
+                { name: "Notion", icon: <SiNotion className="w-4 h-4 text-white" /> },
             ],
         },
         {
             icon: Cloud,
-            title: "Cloud & DevOps",
+            title: "Cloud & Collaboration",
             color: "text-orange-400",
             skills: [
-                { name: "AWS", icon: <FaAws className="w-4 h-4 text-[#FF9900]" /> },
-                { name: "Docker", icon: <FaDocker className="w-4 h-4 text-[#2496ED]" /> },
-                { name: "CI/CD", icon: <FcWorkflow className="w-4 h-4" /> },
-                { name: "Kubernetes", icon: <BsGrid1X2 className="w-4 h-4 text-[#326CE5]" /> },
-                { name: "Git", icon: <FaGitAlt className="w-4 h-4 text-[#F05032]" /> },
-                { name: "Linux", icon: <FaLinux className="w-4 h-4 text-[#FCC624]" /> },
-            ],
-        },
-        {
-            icon: Cpu,
-            title: "Tools & Technologies",
-            color: "text-blue-400",
-            skills: [
-                { name: "VS Code", icon: <TbBrandVscode className="w-4 h-4 text-[#007ACC]" /> },
-                { name: "Jest", icon: <SiJest className="w-4 h-4 text-[#C21325]" /> },
-                { name: "Webpack", icon: <SiWebpack className="w-4 h-4 text-[#8DD6F9]" /> },
-                { name: "Redux", icon: <SiRedux className="w-4 h-4 text-[#764ABC]" /> },
-                { name: "Firebase", icon: <SiFirebase className="w-4 h-4 text-[#FFCA28]" /> },
-                { name: "Vercel", icon: <SiVercel className="w-4 h-4 text-white" /> },
-                { name: "Vite", icon: <SiVite className="w-4 h-4 text-[#646CFF]" /> },
-            ],
-        },
-        {
-            icon: Paintbrush,
-            title: "Creative Skills",
-            color: "text-yellow-400",
-            skills: [
-                { name: "UI Animation", icon: <MdAnimation className="w-4 h-4 text-[#FF4081]" /> },
-                { name: "SVG Animation", icon: <MdAnimation className="w-4 h-4 text-[#00C853]" /> },
-                { name: "3D Modeling", icon: <Cpu className="w-4 h-4 text-[#7C4DFF]" /> },
-                { name: "Motion Graphics", icon: <MdAnimation className="w-4 h-4 text-[#FF6D00]" /> },
+                { name: "Google Colab", icon: <FaGoogleDrive className="w-4 h-4 text-[#F4B400]" /> },
+                { name: "Jupyter", icon: <SiJupyter className="w-4 h-4 text-[#F37626]" /> },
+                { name: "Microsoft Office", icon: <FaMicrosoft className="w-4 h-4 text-[#F25022]" /> },
             ],
         },
     ];
@@ -141,7 +160,7 @@ const SkillsSection = () => {
             <div className="absolute inset-0 bg-grid-pattern opacity-20 pointer-events-none"></div>
 
             <section className="container mx-auto px-4 py-11 relative z-10">
-                <div className="flex justify-center items-center ">
+                <div className="flex justify-center items-center mb-10">
                     <IconCloudDemo />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -158,31 +177,31 @@ const SkillsSection = () => {
             </section>
 
             <style jsx>{`
-                @keyframes shimmer {
-                    0% {
-                        transform: translateX(-100%);
-                    }
-                    100% {
-                        transform: translateX(100%);
-                    }
-                }
-                .animate-shimmer {
-                    animation: shimmer 2s infinite;
-                }
-                .bg-grid-pattern {
-                    background-image: linear-gradient(
-                            to right,
-                            rgba(100, 100, 255, 0.1) 1px,
-                            transparent 1px
-                    ),
-                    linear-gradient(
-                            to bottom,
-                            rgba(100, 100, 255, 0.1) 1px,
-                            transparent 1px
-                    );
-                    background-size: 30px 30px;
-                }
-            `}</style>
+        @keyframes shimmer {
+          0% {
+            transform: translateX(-100%);
+          }
+          100% {
+            transform: translateX(100%);
+          }
+        }
+        .animate-shimmer {
+          animation: shimmer 2s infinite;
+        }
+        .bg-grid-pattern {
+          background-image: linear-gradient(
+              to right,
+              rgba(100, 100, 255, 0.1) 1px,
+              transparent 1px
+            ),
+            linear-gradient(
+              to bottom,
+              rgba(100, 100, 255, 0.1) 1px,
+              transparent 1px
+            );
+          background-size: 30px 30px;
+        }
+      `}</style>
         </main>
     );
 };
