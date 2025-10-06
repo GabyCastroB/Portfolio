@@ -11,17 +11,17 @@ const projects = [
         video: null, // puedes poner un video de YouTube aquí
         image: "Images/FactoryIO.png", // o una imagen local o URL externa
         color: "#5196fd",
-        githubLink: "https://github.com/GabyCastroB/SCADA-Studio5000",
+        githubLink: "https://github.com/GabyCastroB/SCADA-Studio5000/tree/main/ProyectoFinal",
         liveLink: null,
     },
     {
         title: "Computer Vision for Blind Mobility",
         description:
             "YOLOv5 + PyTorch model trained on urban datasets to detect traffic lights, vehicles, and pedestrians.",
-        video: "https://youtu.be/-6pKjsrdCG0", // reemplaza con tu enlace real
+        video: "https://www.youtube.com/watch?v=-6pKjsrdCG0", // reemplaza con tu enlace real
         image: null, // si hay video, no se muestra imagen
         color: "#8f89ff",
-        githubLink: "https://github.com/GabyCastroB/Computer-vision",
+        githubLink: "https://github.com/GabyCastroB/Computer-vision/tree/main/Proyecto",
         liveLink: null,
     },
     {
@@ -29,9 +29,19 @@ const projects = [
         description:
             "Implementation of electronics, CAD, PLC programming, and embedded IoT experiments using different sensors.",
         video: null,
-        image: "/images/iot.jpg",
+        image: "Images/fifo.png",
         color: "#ed649e",
         githubLink: "https://github.com/GabyCastroB/Sensores-Projects",
+        liveLink: null,
+    },
+    {
+        title: "FPGA Projects",
+        description:
+            "Various FPGA designs including adders, BCD to 7-segment decoders, memory buffers, VGA controllers, multipliers, and robotic wheelchair control systems. All implemented with Verilog/VHDL.",
+        video: "https://www.youtube.com/watch?v=BqqBdJyHeCc",
+        image: null,  // pon aquí una imagen representativa si la tienes
+        color: "#00cc88",
+        githubLink: "https://github.com/GabyCastroB/FPGA-Projects",
         liveLink: null,
     },
 ];
