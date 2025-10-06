@@ -2,25 +2,37 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import IconCloudDemo from "@/components/globe";
+import { Code2, Paintbrush, Database, Layout, Cpu, Cloud , BookOpen} from "lucide-react";
 import {
-    Cpu,
-    Code2,
-    Cloud,
-    Database,
-    Paintbrush,
-} from "lucide-react";
-import {
+    FaReact,
+    FaNodeJs,
     FaPython,
+    FaDocker,
+    FaGitAlt,
+    FaLinux,
+    FaFigma,
+    FaAws,
     FaJava,
     FaJs,
     FaHtml5,
     FaCss3Alt,
     FaRaspberryPi,
     FaGithub,
-    FaGitAlt,
     FaMicrosoft,
 } from "react-icons/fa";
 import {
+    SiNextdotjs,
+    SiTypescript,
+    SiTailwindcss,
+    SiPostgresql,
+    SiMongodb,
+    SiGraphql,
+    SiJest,
+    SiWebpack,
+    SiRedux,
+    SiFirebase,
+    SiVercel,
+    SiVite,
     SiCplusplus,
     SiPytorch,
     SiTensorflow,
