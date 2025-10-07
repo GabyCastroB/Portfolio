@@ -6,28 +6,38 @@ import { motion } from "framer-motion";
 const projects = [
     {
         title: "SCADA & Studio5000 Automation",
-        description:
-            "Development of ladder logic in Studio 5000, Factory I/O simulation, and SCADA integration using Ignition.",
-        video: null, // puedes poner un video de YouTube aquí
-        image: "Images/FactoryIO.png", // o una imagen local o URL externa
+        description: `
+      This project integrates industrial automation systems through the development of ladder logic in Studio 5000 and process simulation in Factory I/O. 
+      The system models a production line with conveyor belts, sensors, and actuators, controlled by a Rockwell PLC. 
+      A SCADA layer was built using Ignition by Inductive Automation, allowing real-time process monitoring, alarms, and data visualization. 
+      This setup demonstrates the implementation of closed-loop control, industrial networking, and HMI development for efficient industrial process automation.`,
+        video: null,
+        image: "Images/FactoryIO.png",
         color: "#5196fd",
-        githubLink: "https://github.com/GabyCastroB/SCADA-Studio5000/tree/main/ProyectoFinal",
+        githubLink:
+            "https://github.com/GabyCastroB/SCADA-Studio5000/tree/main/ProyectoFinal",
         liveLink: null,
     },
     {
         title: "Computer Vision for Blind Mobility",
-        description:
-            "YOLOv5 + PyTorch model trained on urban datasets to detect traffic lights, vehicles, and pedestrians.",
-        video: "https://www.youtube.com/watch?v=-6pKjsrdCG0", // reemplaza con tu enlace real
-        image: null, // si hay video, no se muestra imagen
+        description: `
+      Designed and trained a YOLOv5 deep learning model using PyTorch for object detection in urban environments to assist visually impaired individuals. 
+      The system detects traffic lights, vehicles, crosswalks, and pedestrians in real-time. 
+      The project emphasizes embedded AI applications and accessibility-oriented computer vision for assistive technology.`,
+        video: "https://www.youtube.com/watch?v=-6pKjsrdCG0",
+        image: null,
         color: "#8f89ff",
-        githubLink: "https://github.com/GabyCastroB/Computer-vision/tree/main/Proyecto",
+        githubLink:
+            "https://github.com/GabyCastroB/Computer-vision/tree/main/Proyecto",
         liveLink: null,
     },
     {
         title: "Sensors & IoT Projects",
-        description:
-            "Implementation of electronics, CAD, PLC programming, and embedded IoT experiments using different sensors.",
+        description: `
+      A collection of experiments combining sensors, microcontrollers, and IoT protocols to monitor and automate processes. 
+      Projects include temperature and humidity sensing systems, motion detectors, and actuator control via microcontrollers. 
+      Data acquisition and visualization were achieved through serial communication and cloud dashboards. 
+      The hardware design was complemented by CAD modeling and circuit simulation using tools like Fusion 360 and CADe Simu.`,
         video: null,
         image: "Images/fifo.png",
         color: "#ed649e",
@@ -36,10 +46,13 @@ const projects = [
     },
     {
         title: "FPGA Projects",
-        description:
-            "Various FPGA designs including adders, BCD to 7-segment decoders, memory buffers, VGA controllers, multipliers, and robotic wheelchair control systems. All implemented with Verilog/VHDL.",
+        description: `
+      A series of FPGA-based designs focusing on digital logic and hardware description languages. 
+      Implementations include binary adders, BCD to 7-segment decoders, multipliers, shift registers, and memory buffers developed using Verilog and VHDL. 
+      Advanced modules include a VGA signal generator and a robotic wheelchair controller interfaced with sensors and motor drivers. 
+      Simulation and synthesis were performed using Intel Quartus and ModelSim, demonstrating skills in digital design, parallel processing, and real-time control.`,
         video: "https://www.youtube.com/watch?v=BqqBdJyHeCc",
-        image: null,  // pon aquí una imagen representativa si la tienes
+        image: null,
         color: "#00cc88",
         githubLink: "https://github.com/GabyCastroB/FPGA-Projects",
         liveLink: null,
@@ -119,7 +132,9 @@ function ProjectCard({ project, index }) {
               ></span>
                             <h3 className="text-2xl font-semibold">{project.title}</h3>
                         </div>
-                        <p className="text-gray-400 mb-6">{project.description}</p>
+                        <p className="text-gray-400 mb-6 whitespace-pre-line">
+                            {project.description}
+                        </p>
                     </div>
 
                     {/* Links */}
