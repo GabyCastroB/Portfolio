@@ -12,7 +12,7 @@ const projects = [
       A SCADA layer was built using Ignition by Inductive Automation, allowing real-time process monitoring, alarms, and data visualization. 
       This setup demonstrates the implementation of closed-loop control, industrial networking, and HMI development for efficient industrial process automation.`,
         video: null,
-        image: "Images/FactoryIO.png",
+        image: "/Images/FactoryIO.png",
         color: "#5196fd",
         githubLink:
             "https://github.com/GabyCastroB/SCADA-Studio5000/tree/main/ProyectoFinal",
@@ -39,7 +39,7 @@ const projects = [
       Data acquisition and visualization were achieved through serial communication and cloud dashboards. 
       The hardware design was complemented by CAD modeling and circuit simulation using tools like Fusion 360 and CADe Simu.`,
         video: null,
-        image: "Images/fifo.png",
+        image: "/Images/fifo.png",
         color: "#ed649e",
         githubLink: "https://github.com/GabyCastroB/Sensores-Projects",
         liveLink: null,
