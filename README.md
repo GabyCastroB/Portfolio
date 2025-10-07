@@ -4,7 +4,7 @@ Welcome to my **personal portfolio website**, a space where I showcase my journe
 
 This site was built to highlight my main projects, technical skills, and professional experience — integrating technology, creativity, and purpose.
 
-🔗 **Live website:** [https://gabycastrob.vercel.app](https://gabycastrob.vercel.app)
+🔗 **Live website:** [https://gabycastrob.vercel.app](https://portfolio-gabrielacastro.vercel.app)
 
 ---
 
