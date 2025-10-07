@@ -121,18 +121,6 @@ const profile = {
                     </span>
                   </span>
                                 </a>
-
-                                <a
-                                    href="/GabrielaCastro_CV.pdf"
-                                    className="group relative inline-flex items-center justify-center gap-3 p-0.5 rounded-xl bg-gradient-to-r from-gray-800 to-gray-700 transition-all duration-300 hover:scale-105"
-                                >
-                  <span className="block w-full px-6 py-3 rounded-[11px] bg-gray-900 border border-gray-700/50 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-gray-800 group-hover:to-gray-700">
-                    <span className="relative flex items-center justify-center gap-2 text-gray-300 font-medium group-hover:text-white">
-                      <span>Download Resume</span>
-                      <i className="fas fa-file-alt transform transition-all duration-300 group-hover:rotate-12"></i>
-                    </span>
-                  </span>
-                                </a>
                             </div>
                         </div>
 
