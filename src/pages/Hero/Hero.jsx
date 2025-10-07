@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Prism from "prismjs";
-import "prismjs/components/prism-javascript";
+import "prismjs/components/prism-python";
 import "@/assets/css/tomorrow.css";
 import Meteors from "@/components/ui/meteors";
 import PortfolioPage from "@/pages/About/About";
@@ -12,9 +12,21 @@ const GridBackground = () => {
     return (
         <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
             <div className="absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,transparent_0%,black)]">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" className="absolute inset-0">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    className="absolute inset-0"
+                >
                     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                        <rect width="40" height="40" fill="none" stroke="white" strokeWidth="0.5" className="opacity-40 animate-gridPulse" />
+                        <rect
+                            width="40"
+                            height="40"
+                            fill="none"
+                            stroke="white"
+                            strokeWidth="0.5"
+                            className="opacity-40 animate-gridPulse"
+                        />
                     </pattern>
                     <rect width="100%" height="100%" fill="url(#grid)" />
                 </svg>
@@ -32,27 +44,31 @@ export default function Hero() {
     ];
 
     const [code] = useState(`
-const profile = {
-    name: 'Gabriela María Castro Beltrán',
-    title: 'Electronic Engineer | AI & Automation Developer',
-    skills: [
-        'Python', 'C++', 'PLC Programming', 'SCADA',
-        'Computer Vision', 'TensorFlow', 'PyTorch',
-        'Factory IO', 'Ignition', 'IoT', 'Embedded Systems'
-    ],
-    projects: [
-        'AI for Perimeter Security Drones',
-        'Computer Vision for Visually Impaired Mobility',
-        'Industrial Automation with Studio5000 + FactoryIO + Ignition'
-    ],
-    hardWorker: true,
-    innovative: true,
-    passionate: true,
-    yearsOfExperience: 2,
-    hireable() {
-        return this.hardWorker && this.innovative && this.skills.length > 5;
-    }
-};
+class Profile:
+    def __init__(self):
+        self.name = "Gabriela María Castro Beltrán"
+        self.title = "Electronic Engineer | AI & Automation Developer"
+        self.skills = [
+            "Python", "C++", "PLC Programming", "SCADA",
+            "Computer Vision", "TensorFlow", "PyTorch",
+            "Factory IO", "Ignition", "IoT", "Embedded Systems"
+        ]
+        self.projects = [
+            "AI for Perimeter Security Drones",
+            "Computer Vision for Visually Impaired Mobility",
+            "Industrial Automation with Studio5000 + FactoryIO + Ignition"
+        ]
+        self.hard_worker = True
+        self.innovative = True
+        self.passionate = True
+
+    def hireable(self):
+        return self.hard_worker and self.innovative and len(self.skills) > 5
+
+
+if __name__ == "__main__":
+    gabriela = Profile()
+    print("Hireable:", gabriela.hireable())
 `);
 
     useEffect(() => {
@@ -105,8 +121,12 @@ const profile = {
                             </div>
 
                             <p className="text-base sm:text-xl text-gray-300/90 leading-relaxed mb-10 max-w-xl">
-                                Engineer specialized in <span className="text-red-400 font-semibold">industrial automation, computer vision, and artificial intelligence</span>.
-                                Passionate about designing smart systems that connect hardware and software for Industry 4.0 and 5.0 environments.
+                                Engineer specialized in{" "}
+                                <span className="text-red-400 font-semibold">
+                  industrial automation, computer vision, and artificial intelligence
+                </span>
+                                . Passionate about designing smart systems that connect hardware and
+                                software for Industry 4.0 and 5.0 environments.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
@@ -134,11 +154,11 @@ const profile = {
                                         <div className="window-dot bg-green-500"></div>
                                         <span className="ml-2 text-sm text-gray-400 flex items-center gap-2">
                       <i className="fas fa-code"></i>
-                      gabriela.js
+                      gabriela.py
                     </span>
                                     </div>
-                                    <pre className="language-javascript">
-                    <code className="language-javascript">{code}</code>
+                                    <pre className="language-python">
+                    <code className="language-python">{code}</code>
                   </pre>
                                 </div>
                             </div>
