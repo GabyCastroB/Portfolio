@@ -12,7 +12,7 @@ const projects = [
       A SCADA layer was built using Ignition by Inductive Automation, allowing real-time process monitoring, alarms, and data visualization. 
       This setup demonstrates the implementation of closed-loop control, industrial networking, and HMI development for efficient industrial process automation.`,
         video: null,
-        image: "Images/FactoryIO.png",
+        image: "https://github.com/GabyCastroB/Portfolio/blob/main/Images/FactoryIO.png",
         color: "#5196fd",
         githubLink:
             "https://github.com/GabyCastroB/SCADA-Studio5000/tree/main/ProyectoFinal",
