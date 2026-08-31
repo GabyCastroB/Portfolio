@@ -55,7 +55,7 @@ export default function About() {
                             to design intelligent systems that improve industrial efficiency
                             and human–machine interaction. My interests include{" "}
                             <span className="font-semibold">
-                SCADA integration, digital twins, and edge computing
+                SCADA integration, AI automation, and Cloud computing
               </span>{" "}
                             for adaptive and efficient industrial environments.
                         </p>
