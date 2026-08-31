@@ -165,7 +165,9 @@ const SkillsSection = () => {
                 { name: "Google Colab", icon: <Cpu className="w-4 h-4 text-[#F4B400]" /> },
                 { name: "Jupyter", icon: <SiJupyter className="w-4 h-4 text-[#F37626]" /> },
                 { name: "Microsoft Office", icon: <FaMicrosoft className="w-4 h-4 text-[#F25022]" /> },
-     
+                { name: "Azure Logic Apps", icon: <SiAzuredevops className="w-4 h-4 text-[#007ACC]" /> },
+                { name: "Azure Functions", icon: <SiMicrosoftazure  className="w-4 h-4 text-[#007ACC]" /> },
+                { name: "SQL", icon: <Database className="w-4 h-4 text-[#007ACC]" /> }, 
             ],
         },
     ];
