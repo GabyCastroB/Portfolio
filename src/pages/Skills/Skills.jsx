@@ -157,7 +157,7 @@ const SkillsSection = () => {
                 { name: "Notion", icon: <SiNotion className="w-4 h-4 text-white" /> },
             ],
         },
-        {
+       {
             icon: Cloud,
             title: "Cloud & Collaboration",
             color: "text-orange-400",
@@ -165,8 +165,8 @@ const SkillsSection = () => {
                 { name: "Google Colab", icon: <Cpu className="w-4 h-4 text-[#F4B400]" /> },
                 { name: "Jupyter", icon: <SiJupyter className="w-4 h-4 text-[#F37626]" /> },
                 { name: "Microsoft Office", icon: <FaMicrosoft className="w-4 h-4 text-[#F25022]" /> },
-                { name: "Azure Logic Apps", icon: <SiAzuredevops className="w-4 h-4 text-[#007ACC]" /> },
-                { name: "Azure Functions", icon: <SiMicrosoftazure className="w-4 h-4 text-[#007ACC]" /> },
+                { name: "Azure Logic Apps", icon: <FcWorkflow className="w-4 h-4" /> },
+                { name: "Azure Functions", icon: <SiMicrosoftazure className="w-4 h-4 text-[#0089D6]" /> },
                 { name: "SQL", icon: <Database className="w-4 h-4 text-[#007ACC]" /> }, 
             ],
         },
