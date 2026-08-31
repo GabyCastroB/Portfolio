@@ -165,7 +165,7 @@ const SkillsSection = () => {
                 { name: "Microsoft Office", icon: <FaMicrosoft className="w-4 h-4 text-[#F25022]" /> },
                 { name: "Azure Logic Apps", icon: <Azure className="w-4 h-4 text-[#0089D6]" /> },
                 { name: "Azure Functions", icon: <Azure className="w-4 h-4 text-[#0078D4]" /> },
-                { name: "SQL", icon: <SQL className="w-4 h-4 text-[#CC2927]" /> },
+                { name: "SQL", icon: <Database className="w-4 h-4 text-[#CC2927]" /> },
             ],
         },
     ];
