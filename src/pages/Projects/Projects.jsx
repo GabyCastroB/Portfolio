@@ -39,7 +39,7 @@ const projects = [
       Data acquisition and visualization were achieved through serial communication and cloud dashboards. 
       The hardware design was complemented by CAD modeling and circuit simulation using tools like Fusion 360 and CADe Simu.`,
         video: null,
-        image: "Images/fifo.png",
+        image: "https://github.com/GabyCastroB/Portfolio/blob/main/Images/fifo.png",
         color: "#ed649e",
         githubLink: "https://github.com/GabyCastroB/Sensores-Projects",
         liveLink: null,
