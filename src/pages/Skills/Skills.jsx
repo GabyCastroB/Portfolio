@@ -42,7 +42,7 @@ import {
     SiLatex,
     SiNotion,
     SiJupyter,
-    SiAzuredevops,
+    SiAzuredevops, 
     SiMicrosoftazure,
 } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
@@ -166,7 +166,7 @@ const SkillsSection = () => {
                 { name: "Jupyter", icon: <SiJupyter className="w-4 h-4 text-[#F37626]" /> },
                 { name: "Microsoft Office", icon: <FaMicrosoft className="w-4 h-4 text-[#F25022]" /> },
                 { name: "Azure Logic Apps", icon: <SiAzuredevops className="w-4 h-4 text-[#007ACC]" /> },
-                { name: "Azure Functions", icon: <SiMicrosoftazure  className="w-4 h-4 text-[#007ACC]" /> },
+                { name: "Azure Functions", icon: <SiMicrosoftazure className="w-4 h-4 text-[#007ACC]" /> },
                 { name: "SQL", icon: <Database className="w-4 h-4 text-[#007ACC]" /> }, 
             ],
         },
