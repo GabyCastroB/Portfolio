@@ -42,6 +42,8 @@ import {
     SiLatex,
     SiNotion,
     SiJupyter,
+    SiAzuredevops,
+    SiMicrosoftazure,
 } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
 import { BsFileEarmarkCode, BsGrid1X2 } from "react-icons/bs";
