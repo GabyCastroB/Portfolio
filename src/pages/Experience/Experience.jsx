@@ -51,7 +51,7 @@ const ExperienceSection = () => {
             icon: Brain,
             title: "Junior Researcher – AI & Computer Vision",
             company: "Colombian Aerospace Force",
-            period: "2024",
+            period: "Feb–Jul 2024",
             description:
                 "Conducted research on artificial intelligence applications for aerial surveillance. Designed and trained neural networks for object detection, created datasets, and implemented vision algorithms for autonomous drones in military security operations.",
         },
@@ -67,7 +67,7 @@ const ExperienceSection = () => {
             icon: Code2,
             title: "Freelance Evaluator – AI Prompt & Response Reviewer",
             company: "Outlier",
-            period: "2024 – Present",
+            period: "Sep 2024–2025",
             description:
                 "Evaluate and create AI-generated prompts and answers in English. Ensure logical coherence, clarity, and language quality to improve model performance and training data integrity for large language models.",
         },
@@ -75,9 +75,17 @@ const ExperienceSection = () => {
             icon: Globe2,
             title: "Trilingual Content Moderator",
             company: "Teleperformance",
-            period: "2024 – Present",
+            period: "May 2025–March 2026",
             description:
                 "Monitor and review user-generated content in Spanish, English, and Portuguese. Maintain compliance with community standards, ensure accuracy and cultural sensitivity, and promote safe online environments.",
+        },
+        {
+            icon: Brain,
+            title: "Application Support Engineer L2",
+            company: "Softtek",
+            period: "March 2026-Present",
+            description:
+                "Develop and optimise AI-powered chatbot solutions to automate business processes and improve operational efficiency, reducing reliance on manual workflows. Collaborate with Business Intelligence teams to identify automation opportunities, replacing manual processes with AI-driven solutions.",
         },
     ];
 
